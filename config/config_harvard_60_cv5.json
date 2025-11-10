@@ -1,0 +1,12 @@
+{
+  "mDamage_folder": "data/raw_full/damageProfiler",
+  "metadata_file": "data/labels/age_raw.csv",
+  "batch_metadata_file": "data/labels/batch_names.csv",
+  "cv": 5,
+  "feature_names": ["A", "C", "G", "T", "Total", "G>A", "C>T", "A>G", "T>C", "A>C", "A>T", "C>G", "C>A", "T>G", "T>A",
+                      "G>C",  "G>T",  "A>-", "T>-", "C>-",  "G>-",  "->A", "->T", "->C", "->G", "S"],
+  "exp_folder": "experiments/experiment_article_final08",
+  "pca_arr" : [1, 2, 3, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75 ,80, 85,90, 95, 100, 105, 110],
+  "train_val_size": 0.8,
+  "seed": 777
+}
