@@ -51,32 +51,7 @@ The input to the machine learning pipeline is not raw BAM files, but the output 
 Preprocessing of BAM files (alignment, mapping, and damage profiling) must be performed externally prior to using this repository. This step is not included in the present pipeline.
 
 Each BAM file should be processed independently using DamageProfiler to produce a corresponding misincorporation.txt file. The model operates exclusively on these derived damage statistics.
-## Project structure
 
-project_root/
-│
-├── src_final/
-│   ├── utils/                # Utility functions
-│   ├── experiments.py        # Model training pipeline
-│   ├── inference.py          # Inference on new BAM files
-│   ├── inference_test.py     # Inference on held-out test set
-│   └── visualization.py      # Plotting and reporting utilities
-│
-├── data/
-│   ├── final/                # DamageProfiler output for each BAM file
-│   │   ├── SAMPLE_1/
-│   │   │   └── misincorporation.txt
-│   │   ├── SAMPLE_2/
-│   │   │   └── misincorporation.txt
-│   │   └── ...
-│   │
-│   └── labels/               # Metadata with chronological ages
-│       └── metadata.tsv
-│
-├── config/
-│   └── config_harvard_60_cv5.json
-│
-└── README.md
 ------------------------------------------------------------------------
 
 ## Requirements
