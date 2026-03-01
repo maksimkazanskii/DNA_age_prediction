@@ -96,17 +96,17 @@ All regression models are trained using the following pipeline:
 
 ## Evaluated Models
 
--   Linear Regression\
--   Ridge Regression\
--   Lasso\
--   ElasticNet\
--   Random Forest\
--   Gradient Boosting\
--   Support Vector Regression\
--   K-Nearest Neighbors\
--   Bayesian Ridge\
--   Decision Tree\
--   XGBoost\
+-   Linear Regression
+-   Ridge Regression
+-   Lasso
+-   ElasticNet
+-   Random Forest
+-   Gradient Boosting
+-   Support Vector Regression
+-   K-Nearest Neighbors
+-   Bayesian Ridge
+-   Decision Tree
+-   XGBoost
 -   Mean (Baseline) Predictor
 
 ------------------------------------------------------------------------
@@ -119,9 +119,9 @@ After training, the best-performing configuration is saved to:
 
 Including:
 
--   `best_model.pkl` -- trained regression model\
--   `best_scaler.pkl` -- fitted StandardScaler\
--   `best_pca.pkl` -- fitted PCA\
+-   `best_model.pkl` -- trained regression model
+-   `best_scaler.pkl` -- fitted StandardScaler
+-   `best_pca.pkl` -- fitted PCA
 -   `best_model_params.json` -- selected model and hyperparameters
 
 ------------------------------------------------------------------------
@@ -150,8 +150,8 @@ python src_final/inference_test.py
 
 Metrics:
 
--   MAE -- Mean Absolute Error\
--   RMSE -- Root Mean Squared Error\
+-   MAE -- Mean Absolute Error
+-   RMSE -- Root Mean Squared Error
 -   Baseline MAE -- Error of mean predictor
 
 Predictions are saved to:
