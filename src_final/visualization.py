@@ -66,7 +66,7 @@ def create_and_save_plot(df, final_folder):
     print("... Creating algorithm comparison plot")
     plt.figure(figsize=(16, 16))  # Set the figure size
     cmap = 'RdBu'
-    vmin = 1700
+    vmin = 1600
     vmax = 2100
 
     numeric_df = df[[col for col in df.columns if "MAE" in col and "std" not in col]]
@@ -90,15 +90,15 @@ def create_and_save_plot(df, final_folder):
                      cmap=cmap,
                      fmt="",  # Required for string formatting in annotations
                      cbar=True,
-                     linewidths=0.5,
-                     annot_kws={"fontsize": 7},  # Smaller font size for better fit
+                     linewidths=0.2,
+                     annot_kws={"fontsize": 8},  # Smaller font size for better fit
                      vmin=vmin,
                      vmax=vmax)
 
     # Customize axis labels and title
     plt.xlabel('Algorithm', labelpad=16, fontsize=16)  # Set fontsize for x-label
     plt.ylabel('PCA value', labelpad=16, fontsize=16)  # Set fontsize for y-label
-    plt.title('Algorithm performance (MAE ± std / R² ± std) \n for different number of components of PCA',
+    plt.title('',
               pad=40, fontsize=16)  # Set fontsize for title
 
     # Set tick label sizes
